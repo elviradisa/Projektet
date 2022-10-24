@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "RuslanDisplay";
+    src: url("RuslanDisplay-Regular.ttf");
+}
+
 body {
     margin: 0;
     width: 100vw;
@@ -17,15 +22,21 @@ body {
 
 h1 {
     margin: 0;
+    font-family: "RuslanDisplay";
+    
+}
+
+.header {
+    font-size: 15vw;
 }
 
 .content {
     width: 90%;
     height: 80%;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 20px;
     box-sizing: border-box;
     overflow-y: scroll;
-   
+    color: rgba(255, 255, 255, 0.7);
 }
