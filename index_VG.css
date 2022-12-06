@@ -9,39 +9,23 @@ body {
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0;
+    margin: 30px;
 }
 
 .content {
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
     overflow-y: scroll;
     color: rgba(255, 255, 255, 0.7);
     margin: 20px;
 }
 
-h1 {
-    margin: 0;
-    font-family: "Bungee Shade";
-    
-}
-
-.header {
-    font-size: 15vw;
-}
-
-
-
 nav {
     display: flex;
     text-align: center;
     gap: 2px;
 }
-
 .nav {
     background-color: rgba(252, 248, 248, 0.7);
     font-size: 20px;
@@ -51,6 +35,11 @@ nav {
     color: rgba(0, 0, 0, 0.7);
 }
 
+.unmarked:hover {
+    opacity: 0.8;
+    background-color: black;
+    color: white;
+}
 .marked {
     border: 1px solid white;
     font-size: 20px;
@@ -60,59 +49,253 @@ nav {
     -moz-box-shadow: 0px 0px 17px 4px rgba(255,255,255,0.75);
 }
 
-.header_second {
-    font-size: 25px;
-    font-family: "Bungee Outline";
-}
-
 .best {
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 20px;
     border: 1px solid white;
     margin: 50px 0;
+    
+}
 
+.header {
+    margin: 0;
+    font-size: 12vw;
+    font-family: "Bungee Shade";
+}
+.header_second {
+    margin: 0;
+    font-size: 25px;
+    font-family: "Bungee Outline";
+}
+.album_data {
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+.musicians {
+    list-style-type: none;
+}
+
+#AT-Liens {
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: auto auto auto;
-    position: relative;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(15, 50px);
+    gap: 10px;
+}
+.anecdotes {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start: 12;
+    grid-row-end: 15;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2vw;
+    margin: 0;
+}
+.top_right_90 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #5e884f;
+    color: rgb(88, 184, 206);
+    width: 100%;
+    border-radius: 20px 0 20px 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.empty {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: rgba(red, green, blue, alpha);
+    width: 100%;
+}
+.two_wide {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: #5e884f;
+    color: rgb(88, 184, 206);
+    width: 100%;
+    border-radius: 20px 20px 20px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.empty_tablet_empty {
+    
+}
+.empty_phone_empty {
+    
+}
+.top_left_90 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    background-image: url(46a083-20200812-outkast-with-grammy-awards-in-2004.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 20px 20px 20px;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.bottom_right_90 {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    background-color: #5e884f;
+    color: rgb(88, 184, 206);
+    border-radius: 20px 20px 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+#the_love_below {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(15, 50px);
+    gap: 10px;
+}
+.bottom_left_90 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #a85636;
+    color: rgb(46, 22, 13);
+    border-radius: 20px 20px 20px 0;
+    padding: 15px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.top_left {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: #a85636;
+    color: rgb(46, 22, 13);
+    border-radius: 0 20px 20px 20px;
+    padding: 15px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.image_1 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    background-image: url(a4279ee5d147f7e4258626accd988358.webp);
+    background-size: cover;
+    background-position: top;
+    border-radius: 0 20px 20px 20px;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.bottom_right {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    background-color: #a85636;
+    border-radius: 20px 20px 0 20px;
+    color: rgb(46, 22, 13);
+    padding: 15px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
 }
 
 .cover {
-    grid-column: 2;
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 8;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.cover2 {
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 8;
     position: relative;
 }
 
 img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+
+}
+
+
+.song_list {
+    display: flex;
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 8;
+    grid-row-end: 12;
+    margin-top: 10px;
+    font-size: 14px;
+    gap: 10px;
+    margin: 0;
+}
+.song_list1,
+.song_list2,
+.song_list3,
+.song_list4 {
+    width: 100%;
+}
+.song_list1 {
+    background-color: rgb(85, 179, 208);
+    border-radius: 0 0 0 20px;
+    color: #a2f49b;
+}
+.song_list2 {
+    background-color: rgb(85, 179, 208);
+    border-radius: 0 0 20px 0;
+    color: #a2f49b;
+}
+.song_list3 {
+    border-radius: 0 0 0 20px;
+    background-color: #d0ad94;
+}
+.song_list4 {
+    border-radius: 0 0 20px 0;
+    background-color: #d0ad94;
 }
 
 .show_hover {
-    
     position: absolute;
     border-radius: 20px 20px 0 0;
 }
 .show_not_hover {
-    
     border-radius: 20px 20px 0 0;
 }
 .show_hover:hover {
     opacity: 0.1;
-    transition: 1s;
+    transition: 0.7s;
+}
+.show_hover:not(:hover) {
+    transition: 0.7s;
 }
 
-.song_list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: rgb(170, 215, 119);
-    margin-top: 10px;
-}
-.song_list1 {
-    margin-right: 10px;
-}
-.song_list2 {
-    
-   
+
+@media (min-width: 800px){
+    .empty_tablet_empty,
+    .empty_phone_empty {
+        display: none;
+        position: absolute;
+    }
 }
