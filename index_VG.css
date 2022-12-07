@@ -5,30 +5,33 @@ body {
     background-image: url("FGvSOPvVkAkiTqm.jpg");
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     font-family: "Barlow Condensed";
 }
-
 .container {
     margin: 30px;
 }
-
 .content {
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
     overflow-y: scroll;
     color: rgba(255, 255, 255, 0.7);
-    margin: 20px;
+    background-image: url("number-1-icon.png");
+    background-repeat: no-repeat;
+    background-size: 60px;
+    position: relative;
 }
 
 nav {
     display: flex;
     text-align: center;
     gap: 2px;
+    font-size: 2vw;
+    margin-top: 30px;
 }
 .nav {
     background-color: rgba(252, 248, 248, 0.7);
-    font-size: 20px;
     padding: 10px;
     border-radius: 10px;
     width: 25%;   
@@ -42,7 +45,6 @@ nav {
 }
 .marked {
     border: 1px solid white;
-    font-size: 20px;
     font-weight: bold;
     box-shadow: 0px 0px 17px 4px rgba(255,255,255,0.75);
     -webkit-box-shadow: 0px 0px 17px 4px rgba(255,255,255,0.75);
@@ -57,7 +59,6 @@ nav {
     margin: 50px 0;
     
 }
-
 .header {
     margin: 0;
     font-size: 12vw;
@@ -65,41 +66,49 @@ nav {
 }
 .header_second {
     margin: 0;
-    font-size: 25px;
+    font-size: 3vw;
     font-family: "Bungee Outline";
 }
+
 .album_data {
     grid-column-start: 1;
     grid-column-end: 7;
 }
 .musicians {
+    font-size: 1.5vw;
     list-style-type: none;
+}
+p {
+    font-size: 1.5vw;
 }
 
 #AT-Liens {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(15, 50px);
+    grid-template-rows: repeat(14, 50px);
     gap: 10px;
 }
 .anecdotes {
     grid-column-start: 1;
     grid-column-end: 12;
-    grid-row-start: 12;
+    grid-row-start: 11;
     grid-row-end: 15;
     gap: 10px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 110px);
     list-style-type: none;
     padding: 0;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     margin: 0;
 }
 .top_right_90 {
     grid-column-start: 1;
     grid-column-end: 2;
-    background-color: #5e884f;
-    color: rgb(88, 184, 206);
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #465375;
+    color: #81b669;
     width: 100%;
     border-radius: 20px 0 20px 20px;
     box-sizing: border-box;
@@ -116,8 +125,10 @@ nav {
 .two_wide {
     grid-column-start: 3;
     grid-column-end: 5;
-    background-color: #5e884f;
-    color: rgb(88, 184, 206);
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #465375;
+    color: #81b669;
     width: 100%;
     border-radius: 20px 20px 20px 0;
     padding: 15px;
@@ -125,15 +136,11 @@ nav {
     display: flex;
     align-items: center;
 }
-.empty_tablet_empty {
-    
-}
-.empty_phone_empty {
-    
-}
 .top_left_90 {
     grid-column-start: 5;
     grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
     background-image: url(46a083-20200812-outkast-with-grammy-awards-in-2004.jpg);
     background-size: cover;
     background-position: center;
@@ -146,8 +153,10 @@ nav {
 .bottom_right_90 {
     grid-column-start: 6;
     grid-column-end: 7;
-    background-color: #5e884f;
-    color: rgb(88, 184, 206);
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #465375;
+    color: #81b669;
     border-radius: 20px 20px 0 20px;
     box-sizing: border-box;
     display: flex;
@@ -158,12 +167,14 @@ nav {
 #the_love_below {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(15, 50px);
+    grid-template-rows: repeat(14, 50px);
     gap: 10px;
 }
 .bottom_left_90 {
     grid-column-start: 1;
     grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
     background-color: #a85636;
     color: rgb(46, 22, 13);
     border-radius: 20px 20px 20px 0;
@@ -177,6 +188,8 @@ nav {
 .top_left {
     grid-column-start: 3;
     grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
     background-color: #a85636;
     color: rgb(46, 22, 13);
     border-radius: 0 20px 20px 20px;
@@ -190,6 +203,8 @@ nav {
 .image_1 {
     grid-column-start: 4;
     grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
     background-image: url(a4279ee5d147f7e4258626accd988358.webp);
     background-size: cover;
     background-position: top;
@@ -204,6 +219,8 @@ nav {
 .bottom_right {
     grid-column-start: 6;
     grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
     background-color: #a85636;
     border-radius: 20px 20px 0 20px;
     color: rgb(46, 22, 13);
@@ -221,8 +238,6 @@ nav {
     grid-row-start: 1;
     grid-row-end: 8;
     position: relative;
-    height: 100%;
-    width: 100%;
 }
 
 .cover2 {
@@ -234,22 +249,21 @@ nav {
 }
 
 img {
-    height: 100%;
     width: 100%;
-
+    height: 100%;
+    object-fit: cover;
 }
-
 
 .song_list {
     display: flex;
     grid-column-start: 7;
     grid-column-end: 12;
     grid-row-start: 8;
-    grid-row-end: 12;
-    margin-top: 10px;
-    font-size: 14px;
+    grid-row-end: 11;
+    font-size: 1.1vw;
     gap: 10px;
     margin: 0;
+    width: 100%;
 }
 .song_list1,
 .song_list2,
@@ -258,14 +272,14 @@ img {
     width: 100%;
 }
 .song_list1 {
-    background-color: rgb(85, 179, 208);
+    background-color: #4ba4ba;
     border-radius: 0 0 0 20px;
-    color: #a2f49b;
+    color: #a3c864;
 }
 .song_list2 {
-    background-color: rgb(85, 179, 208);
+    background-color: #4ba4ba;
     border-radius: 0 0 20px 0;
-    color: #a2f49b;
+    color: ##f9fcf7;
 }
 .song_list3 {
     border-radius: 0 0 0 20px;
@@ -291,11 +305,283 @@ img {
     transition: 0.7s;
 }
 
+@media (max-width: 800px) {
+    body {
+        background-image: url(FGvSOPvVkAkiTqm\ \(kopia\).jpg);
+        background-position: center;
+    }
+    .show_hover,
+    .show_not_hover {
+        border-radius: 20px 0 0 20px;
+    }
+    .header {
+        text-align: center;
+    }
+    #AT-Liens {
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(18, 45px);
+    }
+    #the_love_below {
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(18, 45px);
+    }
+    .album_data {
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 7;
+        grid-row-end: 10;
+    }
+    .cover,
+    .cover2 {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 7;
+    } 
+    .song_list {
+        grid-column-start: 7;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 7;
+        display: flex;
+        flex-direction: column;
+    }
+    .song_list1,
+    .song_list3 {
+        border-radius: 0 20px 0 0;
+    }
+    .song_list1,
+    .song_list2,
+    .song_list3,
+    .song_list4 {
+        width: 100%;
+        height: 100%;
+    }
+    .anecdotes {
+        grid-row-start: 12;
+        grid-row-end: 14;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(2, 180px);
+    }
+    .top_right_90 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-end: 2;
+    }
+    .empty {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    .two_wide {
+        grid-column-start: 5;
+        grid-column-end: 12;
+        grid-row-end: 2;
+    }
+    .top_left_90 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+    }
+    .bottom_right_90 {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 2;
+    }
+    .bottom_left_90 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-end: 2;
+    }
+    .top_left {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-end: 2;
+    }
+    .image_1 {
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 2;
+    }
+    .bottom_right {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 2;
+    }
+}   
 
-@media (min-width: 800px){
-    .empty_tablet_empty,
-    .empty_phone_empty {
-        display: none;
-        position: absolute;
+@media (min-width: 1111px) {
+    .header {
+        font-size: 133px;
+    }
+    .header_second {
+        font-size: 33px;
+    }
+    .musicians {
+        font-size: 17px;
+    }
+    .song_list {
+        font-size: 12.2167px;
+    }
+    p {
+        font-size: 16.5px;
+    }
+    .anecdotes {
+        font-size: 17px;
+    }
+    nav {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        font-size: 108.117px;
+    }
+    .header_second {
+        font-size: 27.0167px;
+    }
+    .musicians {
+        font-size: 13.5px;
+    }
+    p {
+        font-size: 13.5px;
+    }
+    .song_list {
+        font-size: 9.9px;
+    }
+    .anecdotes {
+        font-size: 13.8px;
+    }
+    nav {
+        font-size: 18.0167px;
+    }
+}
+@media (max-width: 500px) {
+    body {
+        background-image: url(FGvSOPvVkAkiTqm\ \(kopia\ 2\).jpg);
+        background-position: center;
+    }
+    .container {
+        margin: 0;
+    }
+    .nav {
+        padding: 12px;
+    }
+    .marked {
+        font-size: 17px;
+    }
+    .header_second {
+        font-size: 22px;
+    }
+    .cover,
+    .cover2 {
+        grid-column-start: 1;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 7;
+    } 
+    .show_hover,
+    .show_not_hover {
+        border-radius: 20px 20px 0 0;
+    }
+    .song_list {
+        grid-column-start: 1;
+        grid-column-end: 12;
+        grid-row-start: 7;
+        grid-row-end: 10;
+        display: flex;
+        flex-direction: row;
+        font-size: 2.2vw;
+    }
+    .song_list1,
+    .song_list3 {
+        border-radius: 0 0 0 20px;
+    }
+    .album_data {
+        grid-column-start: 1;
+        grid-column-end: 12;
+        grid-row-start: 10;
+        grid-row-end: 13;
+    }
+    .anecdotes {
+        grid-column-start: 1;
+        grid-column-end: 12;
+        grid-row-start: 15;
+        grid-row-end: 21;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 140px);
+    }
+    .top_right_90 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-end: 2;
+    }
+    .two_wide {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-end: 2;
+    }
+    .top_left_90 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .bottom_right_90 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .bottom_left_90 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-end: 2;
+    }
+    .top_left {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-end: 2;
+    }
+    .image_1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .bottom_right {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #AT-Liens {
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(20, 40px);
+    }
+    #the_love_below {
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(20, 40px);
+    }
+    .header {
+        font-size: 15vw;
+    }
+    .header_second {
+        font-size: 8vw;
+    }
+    .musicians {
+        font-size: 3vw;
+    }
+    p {
+        font-size: 3vw;
+    }
+    .record {
+        font-size: 20px;
+    }
+    .anecdotes {
+        font-size: 17px;
+    }
+    nav {
+        font-size: 22px;
     }
 }
