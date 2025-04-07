@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    height: 100vh;
+    /*height: 100vh;*/
     background-image: url("FGvSOPvVkAkiTqm.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -15,7 +15,7 @@ body {
 .VG::after {
     content: "";
     background-image: url(number-1-icon.png);
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-size: 100%;
     width: 45px;
     height: 45px;
@@ -69,8 +69,8 @@ nav {
     border: 1px solid white;
     font-weight: bold;
     box-shadow: 0px 0px 17px 4px rgba(255,255,255,0.75);
-    -webkit-box-shadow: 0px 0px 17px 4px rgba(255,255,255,0.75);
-    -moz-box-shadow: 0px 0px 17px 4px rgba(255,255,255,0.75);
+    /*-webkit-box-shadow: 0px 0px 17px 4px rgba(255,255,255,0.75);
+    -moz-box-shadow: 0px 0px 17px 4px rgba(255,255,255,0.75);*/
 }
 
 #AT-Liens {
@@ -81,12 +81,8 @@ nav {
 #the_love_below {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-
     gap: 10px;
 }
-.anecdotes > .empty_tablet_empty, .empty_phone_empty, .empty {
-    display: none;
- }
 .album_data {
     position: relative;
     grid-column-start: 1;
@@ -185,11 +181,14 @@ img {
     border-radius: 0 0 20px 0;
 }
 
+.anecdotes > .empty_tablet_empty, .empty_phone_empty, .empty {
+    display: none;
+}
 .anecdotes {
     grid-column-start: 1;
     grid-column-end: 12;
-    grid-row-start: 11;
-    grid-row-end: 15;
+    /*grid-row-start: 11;
+    grid-row-end: 15;*/
     gap: 5px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -362,13 +361,13 @@ img {
     .header {
         text-align: center;
     }
-    #AT-Liens {
+    /*#AT-Liens {
         grid-template-columns: repeat(11, 1fr);
     }
     #the_love_below {
         grid-template-columns: repeat(11, 1fr);
      
-    }
+    }*/
     .album_data {
         grid-column-start: 1;
         grid-column-end: 12;
@@ -406,7 +405,7 @@ img {
         grid-column-end: 12;
         grid-row-start: 13;
         grid-row-end: 17;
-        grid-template-rows: repeat(1, 1fr);
+        /*grid-template-rows: repeat(1, 1fr);*/
         font-size: 2vw;
     }
     .anecdotes > li {
@@ -479,12 +478,12 @@ img {
         background-color: rgba(252, 248, 248, 0.7);
         color: rgba(0, 0, 0, 0.7);
     }
-    #AT-Liens {
+    /*#AT-Liens {
         grid-template-columns: repeat(11, 1fr);
     }
     #the_love_below {
         grid-template-columns: repeat(11, 1fr);
-    }
+    }*/
     .anecdotes > li {
         height: 140px;
     }
